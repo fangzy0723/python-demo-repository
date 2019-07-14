@@ -1,10 +1,29 @@
 #！/usr/bin/env python
 # time: 2018/12/12 13:39
 # author: fangzy
-# file name: day01.py
+# file name: 基础.py
+
+# True 非0的数或非空都是True
+print(bool(1))
+# False
+print(bool(0))
+# True
+print(bool(-1))
+# True
+print(bool("abc"))
+# False
+print(bool(""))
+# True
+print(bool([1,2,3]))
+# False
+print(bool([]))
+# True
+print(bool({1,2,3}))
+# False
+print(bool({}))
 
 #测试控制台输出
-# print("123")
+print("123")
 # print("123","456" + str(10+2))
 
 # 测试输入
@@ -44,4 +63,41 @@ print(nameList[0])
 nameList.append("aaa")
 # 获取最后一个元素可以用元素的下标或者-1依次类推访问倒数第二个、倒数第三个可用-2、-3
 print(nameList[len(nameList)-1], nameList[-1])
+
+
+
+# 字符串前加r不转义
+print(r"hello \n world")
+
+
+# 集合
+print(type({1, 2, 3}))
+# 定义一个空集合
+set()
+# 输出集合的长度
+print(len({1, 2, 3, 4}))
+# 1 在不在这个集合中
+print(1 in {1, 2, 3})
+# 4 在不在这个集合中
+print(4 not in {1, 2, 3})
+# 集合的差集，前面集合排除后面集合后的集合
+print({1, 2, 3, 4} - {2, 3})
+# 集合的交集,两个集合都用的元素
+print({1, 2, 3, 4} & {2, 3})
+# 集合的并集
+print({1, 2, 3, 4} | {2, 3, 5})
+
+
+# 字典
+# 定义一个字典,key不能重复，重复的后面的覆盖前面的
+{"key1": "val1", "key2": "val2"}
+
+# 类型判断
+# 1、type（1）
+print(type(1))
+# 2、isinstance(1,int)
+print(isinstance(1, int))
+# 1的类型是后面元素中的任何一个都返回True
+
+print(isinstance(1, (int, str, tuple)))
 

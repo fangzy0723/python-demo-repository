@@ -1,4 +1,3 @@
-import module1
 # def bb():
 #     print("bb....")
 

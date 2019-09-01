@@ -1,5 +1,5 @@
 from flask import Flask, url_for
-from test_blueprint import testrouter
+from demo.test_blueprint import testrouter
 from common.libs.url_manager import UrlManager
 
 app = Flask(__name__)
